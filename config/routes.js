@@ -12,5 +12,9 @@ router.route("/users/new")
 
 router.route("/users/:id")
   .get(usersController.usersShow)
+  .patch(usersController.usersUpdate)
+
+router.route("/users/:id/edit")
+  .get(usersController.usersEdit)
 
 module.exports = router;

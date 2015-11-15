@@ -1,0 +1,8 @@
+<h1>Edit user</h1>
+<form method="post" action="/users/<%= user.id %>">
+  <input type="text" name="user[name]" value="<%= user.name %>" placeholder="Enter name">
+  <input type="number" name="user[age]" value="<%= user.age %>" placeholder="Enter Age">
+  <input type="date" name="user[dob]" value="<%= user.dob %>" placeholder="DOB">
+<input type="text" name="user[sign]" value="<%= user.sign %>" placeholder="Starsign">
+<button class="btn">Submit</button>
+</form>
