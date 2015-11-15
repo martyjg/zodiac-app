@@ -1,1 +1,10 @@
-<%= users %>
+<h1>All Users</h1>
+
+<% for (i = 0; i < users.length; i++) { %>
+<ul>
+<li><%= users[i].name %></li>
+<li><%= users[i].age %></li>
+<li><%= users[i].dob %></li>
+<li><%= users[i].sign %></li>
+</ul>
+<% } %>
