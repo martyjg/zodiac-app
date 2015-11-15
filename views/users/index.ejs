@@ -2,7 +2,7 @@
 
 <% for (i = 0; i < users.length; i++) { %>
 <ul>
-<li><%= users[i].name %></li>
+<li><a href="/users/<%=users[i].id %>"><%= users[i].name %></a></li>
 <li><%= users[i].age %></li>
 <li><%= users[i].dob %></li>
 <li><%= users[i].sign %></li>
