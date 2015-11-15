@@ -13,6 +13,7 @@ router.route("/users/new")
 router.route("/users/:id")
   .get(usersController.usersShow)
   .patch(usersController.usersUpdate)
+  .delete(usersController.usersDelete)
 
 router.route("/users/:id/edit")
   .get(usersController.usersEdit)

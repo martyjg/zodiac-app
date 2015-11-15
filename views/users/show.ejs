@@ -3,3 +3,10 @@
 <li>Age: <%= user.age %></li>
 <li>Date of birth: <%= user.dob.getDate() %>/<%= user.dob.getMonth() + 1 %></li>
 <li>Starsign: <%= user.sign %></li>
+<li>
+<a href="/users/<%= user.id %>/edit" class="btn">Edit</a>
+  <form method="post" action="/users/<%= user.id %>">
+    <input type="hidden" name="_method" value="delete">
+    <button class="btn">Delete</button>
+  </form>
+</li>
