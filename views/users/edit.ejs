@@ -1,3 +1,4 @@
+<div class="container">
 <h1>Edit user</h1>
 <form method="post" action="/users/<%= user.id %>">
   <input type="hidden" name="_method" value="patch">
@@ -7,3 +8,4 @@
   <input type="text" name="user[sign]" value="<%= user.sign %>" placeholder="Starsign">
   <button class="btn">Submit</button>
 </form>
+</div>
